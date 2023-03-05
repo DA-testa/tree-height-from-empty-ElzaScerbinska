@@ -2,7 +2,7 @@
 import numpy
 import sys
 import threading
-
+import time
 
 def compute_height(n, parents):
     levels = [0]*n
@@ -18,22 +18,25 @@ def compute_height(n, parents):
         return level
 
     for i in range(n):
-        if levels[i] == 0:
-            max_height = max(max_height, heights(i))
+        max_height = max(max_height, heights(i))
         
     return max_height
 
 
 def main():
+    
     n = input()
-
+    start=time.time()
     if "I" in n:
         n = int(input())
+        
         parents = input()
         parents = parents.split()
         parents = map(int, parents)
         parents = list(parents)
         print(compute_height(n, parents))
+        end = time.time()
+        print(end-start)
         
         
     # implement input form keyboard and from files
