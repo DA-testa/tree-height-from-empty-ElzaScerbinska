@@ -30,7 +30,7 @@ def main():
     #parents = map(int, parents)
     #parents = list(parents)
 
-    if "I" in parents:
+    if "I" in n:
         n = int(input())
         parents = input()
         parents = parents.split()
