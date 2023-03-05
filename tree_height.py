@@ -24,7 +24,7 @@ def compute_height(n, parents):
 
 
 def main():
-    n = int(input())
+    n = input()
     parents = input()
     #parents = parents.split()
     #parents = map(int, parents)
