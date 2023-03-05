@@ -32,7 +32,6 @@ def main():
         parents = parents.split()
         parents = map(int, parents)
         parents = list(parents)
-        print(parents)
         print(compute_height(n, parents))
         
         
